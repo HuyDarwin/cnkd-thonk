@@ -1,0 +1,725 @@
+@font-face {font-family: "Myriad Pro"; src: url("//db.onlinewebfonts.com/t/3dd6e9888191722420f62dd54664bc94.eot"); src: url("//db.onlinewebfonts.com/t/3dd6e9888191722420f62dd54664bc94.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3dd6e9888191722420f62dd54664bc94.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3dd6e9888191722420f62dd54664bc94.woff") format("woff"), url("//db.onlinewebfonts.com/t/3dd6e9888191722420f62dd54664bc94.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3dd6e9888191722420f62dd54664bc94.svg#Myriad Pro") format("svg"); }
+
+body {
+	overflow: hidden;
+	background: url('cnkd.png') no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+div, img, button, textarea {
+	position:absolute;
+	margin:auto;
+}
+
+p {
+	margin:auto;
+	position:absolute;
+	letter-spacing:0px;
+}
+
+table {
+	margin:auto;
+	position:absolute;
+	padding:0px;
+}
+
+button {
+	cursor: pointer;
+	font-weight:bold;
+}
+
+button:hover {
+	background-color:00FFFF;
+}
+
+button.quaynon {
+	width:1000px;
+	height:175px;
+	border-radius:5px;
+	transition: 0.3s;
+	font-size:48px;
+	top:15px;
+	right:15px;
+}
+
+button.canhnon {
+	width:475px;
+	height:175px;
+	border-radius:5px;
+	transition: 0.3s;
+	font-size:48px;
+	top:230px;
+	right:540px;
+}
+
+button.canhochu {
+	width:475px;
+	height:175px;
+	border-radius:5px;
+	transition: 0.3s;
+	font-size:48px;
+	top:230px;
+	right:15px;
+}
+
+button.load_doannhanh1 {
+	width:135px;
+	height:100px;
+	border-radius:5px;
+	transition: 0.3s;
+	font-size:24px;
+	top:420px;
+	right:885px;
+}
+
+button.load_doannhanh2 {
+	width:135px;
+	height:100px;
+	border-radius:5px;
+	transition: 0.3s;
+	font-size:24px;
+	top:420px;
+	right:740px;
+}
+
+button.load_vong1 {
+	width:135px;
+	height:100px;
+	border-radius:5px;
+	transition: 0.3s;
+	font-size:24px;
+	top:420px;
+	right:595px;
+}
+
+button.load_vong2 {
+	width:135px;
+	height:100px;
+	border-radius:5px;
+	transition: 0.3s;
+	font-size:24px;
+	top:420px;
+	right:450px;
+}
+
+button.load_vong3 {
+	width:135px;
+	height:100px;
+	border-radius:5px;
+	transition: 0.3s;
+	font-size:24px;
+	top:420px;
+	right:305px;
+}
+
+button.load_khangia {
+	width:135px;
+	height:100px;
+	border-radius:5px;
+	transition: 0.3s;
+	font-size:24px;
+	top:420px;
+	right:160px;
+}
+
+button.load_vongdb {
+	width:135px;
+	height:100px;
+	border-radius:5px;
+	transition: 0.3s;
+	font-size:24px;
+	top:420px;
+	right:15px;
+}
+
+table.o_chu {
+	width:1000px;
+	height:400px;
+	background-color:black;
+	text-align:center;
+	left:15px;
+	top:15px;
+}
+
+button.lam_luc {
+	left:15px;
+	height:50px;
+	width:50px;
+	top:420px;
+	border-radius:5px;
+	transition: 0.3s;
+	font-size:42px;
+	background: url('ochuluc.png');
+	background-size: cover;
+}
+
+button.vong1 {
+	left:78px;
+	height:50px;
+	width:50px;
+	top:420px;
+	border-radius:5px;
+	transition: 0.3s;
+	font-size:42px;
+}
+
+button.vong2 {
+	left:141px;
+	height:50px;
+	width:50px;
+	top:420px;
+	border-radius:5px;
+	transition: 0.3s;
+	font-size:42px;
+}
+
+button.vong3 {
+	left:204px;
+	height:50px;
+	width:50px;
+	top:420px;
+	border-radius:5px;
+	transition: 0.3s;
+	font-size:42px;
+}
+
+button.vongdb {
+	left:267px;
+	height:50px;
+	width:50px;
+	top:420px;
+	border-radius:5px;
+	transition: 0.3s;
+	font-size:42px;
+}
+
+button.chuyennon {
+	left:330px;
+	height:50px;
+	width:50px;
+	top:420px;
+	border-radius:5px;
+	transition: 0.3s;
+	font-size:42px;
+}
+
+button.obimat {
+	left:393px;
+	height:50px;
+	width:50px;
+	top:420px;
+	border-radius:5px;
+	transition: 0.3s;
+	font-size:42px;
+}
+
+button.doidiem {
+	left:456px;
+	height:50px;
+	width:50px;
+	top:420px;
+	border-radius:5px;
+	transition: 0.3s;
+	font-size:42px;
+}
+
+button.hienochu {
+	width:475px;
+	height:100px;
+	border-radius:5px;
+	transition: 0.3s;
+	font-size:48px;
+	top:530px;
+	right:540px;
+}
+
+button.doandungochu {
+	width:475px;
+	height:100px;
+	border-radius:5px;
+	transition: 0.3s;
+	font-size:48px;
+	top:530px;
+	right:15px;
+}
+
+button.mo_o_chu {
+	width:50px;
+	height:50px;
+	border-radius:5px;
+	transition: 0.3s;
+	font-size:32px;
+}
+
+#moc_1 {
+	top:480px;
+	left:15px;
+}
+
+#moc_2 {
+	top:480px;
+	left:77px;
+}
+
+#moc_3 {
+	top:480px;
+	left:139px;
+}
+
+#moc_4 {
+	top:480px;
+	left:201px;
+}
+
+#moc_5 {
+	top:480px;
+	left:263px;
+}
+
+#moc_6 {
+	top:480px;
+	left:325px;
+}
+
+#moc_7 {
+	top:480px;
+	left:387px;
+}
+
+#moc_8 {
+	top:480px;
+	left:449px;
+}
+
+#moc_9 {
+	top:480px;
+	left:512px;
+}
+
+#moc_10 {
+	top:480px;
+	left:578px;
+}
+
+#moc_11 {
+	top:480px;
+	left:642px;
+}
+
+#moc_12 {
+	top:480px;
+	left:706px;
+}
+
+#moc_13 {
+	top:480px;
+	left:770px;
+}
+
+#moc_14 {
+	top:480px;
+	left:834px;
+}
+
+#moc_15 {
+	top:480px;
+	left:898px;
+}
+
+#moc_16 {
+	top:480px;
+	left:962px;
+}
+
+
+#moc_17 {
+	top:540px;
+	left:15px;
+}
+
+#moc_18 {
+	top:540px;
+	left:77px;
+}
+
+#moc_19 {
+	top:540px;
+	left:139px;
+}
+
+#moc_20 {
+	top:540px;
+	left:201px;
+}
+
+#moc_21 {
+	top:540px;
+	left:263px;
+}
+
+#moc_22 {
+	top:540px;
+	left:325px;
+}
+
+#moc_23 {
+	top:540px;
+	left:387px;
+}
+
+#moc_24 {
+	top:540px;
+	left:449px;
+}
+
+#moc_25 {
+	top:540px;
+	left:512px;
+}
+
+#moc_26 {
+	top:540px;
+	left:578px;
+}
+
+#moc_27 {
+	top:540px;
+	left:642px;
+}
+
+#moc_28 {
+	top:540px;
+	left:706px;
+}
+
+#moc_29 {
+	top:540px;
+	left:770px;
+}
+
+#moc_30 {
+	top:540px;
+	left:834px;
+}
+
+#moc_31 {
+	top:540px;
+	left:898px;
+}
+
+#moc_32 {
+	top:540px;
+	left:962px;
+}
+
+
+#moc_33 {
+	top:600px;
+	left:15px;
+}
+
+#moc_34 {
+	top:600px;
+	left:77px;
+}
+
+#moc_35 {
+	top:600px;
+	left:139px;
+}
+
+#moc_36 {
+	top:600px;
+	left:201px;
+}
+
+#moc_37 {
+	top:600px;
+	left:263px;
+}
+
+#moc_38 {
+	top:600px;
+	left:325px;
+}
+
+#moc_39 {
+	top:600px;
+	left:387px;
+}
+
+#moc_40 {
+	top:600px;
+	left:449px;
+}
+
+#moc_41 {
+	top:600px;
+	left:512px;
+}
+
+#moc_42 {
+	top:600px;
+	left:578px;
+}
+
+#moc_43 {
+	top:600px;
+	left:642px;
+}
+
+#moc_44 {
+	top:600px;
+	left:706px;
+}
+
+#moc_45 {
+	top:600px;
+	left:770px;
+}
+
+#moc_46 {
+	top:600px;
+	left:834px;
+}
+
+#moc_47 {
+	top:600px;
+	left:898px;
+}
+
+#moc_48 {
+	top:600px;
+	left:962px;
+}
+
+p.sttthisinh {
+	left:0px;
+	font-size:40px;
+	width:200px;
+	height:50px;
+	font-family:Arial;
+	font-weight:bold;
+	top:5px;
+	text-shadow:3px 3px 3px #808080;
+}
+
+textarea.sodiemts {
+	left:200px;
+	font-size:40px;
+	font-family:Arial;
+	font-weight:bold;
+	height:50px;
+	width:150px;
+	border-radius:5px;
+	overflow:hidden;
+}
+
+textarea.sodiemts_total {
+	left:360px;
+	font-size:40px;
+	font-family:Arial;
+	font-weight:bold;
+	height:50px;
+	width:150px;
+	border-radius:5px;
+	overflow:hidden;
+}
+
+div.diem_thisinh_khung {
+	top:650px;
+	right:520px;
+}
+
+button.cong_vao_total {
+	top:165px;
+	width:510px;
+	border-radius:5px;
+	transition: 0.3s;
+	font-size:48px;
+}
+
+p.cauhoi {
+	top:650px;
+	right:540px;
+	width:475px;
+	height:220px;
+	font-size:40px;
+	font-family:Arial;
+	border-radius:5px;
+	overflow:hidden;
+	background-color:d3d3d3;
+}
+
+button.nhac {
+	height:50px;
+	border-radius:5px;
+	transition: 0.3s;
+	font-size:32px;
+}
+
+#intro {
+	width:100px;
+	top:660px;
+	left:15px;
+	background-color: lime;
+}
+
+#he {
+	width:300px;
+	top:660px;
+	left:125px;
+	background-color: lime;
+}
+
+#ncd {
+	width:300px;
+	top:660px;
+	left:435px;
+	background-color: lime;
+}
+
+#tt {
+	width:269px;
+	top:660px;
+	left:745px;
+	background-color: lime;
+}
+
+#hoc {
+	width:100px;
+	top:720px;
+	left:15px;
+	background-color: yellow;
+}
+
+#ccx {
+	width:100px;
+	top:720px;
+	left:125px;
+	background-color: yellow;
+}
+
+#mcc {
+	width:100px;
+	top:720px;
+	left:235px;
+	background-color: yellow;
+}
+
+#sai {
+	width:50px;
+	top:720px;
+	left:345px;
+	background-color: yellow;
+}
+
+#ddoc {
+	width:100px;
+	top:720px;
+	left:405px;
+	background-color: yellow;
+}
+
+#s30 {
+	width:50px;
+	top:720px;
+	left:515px;
+	background-color: red;
+}
+
+#s10 {
+	width:50px;
+	top:720px;
+	left:575px;
+	background-color: red;
+}
+
+#nn1 {
+	width:100px;
+	top:720px;
+	left:635px;
+	background-color: orange;
+}
+
+#nn2 {
+	width:100px;
+	top:720px;
+	left:745px;
+	background-color: orange;
+}
+
+#nn3 {
+	width:100px;
+	top:720px;
+	left:855px;
+	background-color: orange;
+}
+
+#bc {
+	width:250px;
+	top:780px;
+	left:15px;
+	background-color: yellow;
+}
+
+#md {
+	width:200px;
+	top:780px;
+	left:275px;
+	background-color: purple;
+	color:white;
+}
+
+#ml {
+	width:200px;
+	top:780px;
+	left:485px;
+	background-color: purple;
+	color:white;
+}
+
+#cd {
+	width:200px;
+	top:780px;
+	left:695px;
+	background-color: purple;
+	color:white;
+}
+
+#tl {
+	width:200px;
+	top:840px;
+	left:15px;
+	background-color: #E000A9;
+	color:white;
+}
+
+#mm {
+	width:200px;
+	top:840px;
+	left:225px;
+	background-color: #E000A9;
+	color:white;
+}
+
+#nd {
+	width:200px;
+	top:840px;
+	left:435px;
+	background-color: #E000A9;
+	color:white;
+}
+
+button.dung_nhac {
+	width:150px;
+	top:840px;
+	left:645px;
+	background-color: black;
+	color:white;
+	border-radius:5px;
+	transition: 0.3s;
+	font-size:32px;
+	height:50px;
+}

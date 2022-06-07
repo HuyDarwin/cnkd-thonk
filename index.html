@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>Chiếc nón kì diệu</title>
+	
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="functions.js"></script>
+	<script type="module" src="firebase.js"></script>	
+	<script type="module" src="index_fb.js"></script>
+	
+    <link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="site.css">
+	
+    <meta charset="utf-8" />
+</head>
+<body>
+	<div class='scenechinh'>
+		<div class='chiecnon'></div>
+		<img class='kim' src='kim.png'></img>
+	</div>
+	<div class='sceneochu'>
+    <table class='o_chu'></table>
+	</div>
+	<script>
+		var ochustring = "";
+		ochustring += "<tr>";
+		for(var i = 0; i <= 15; i++){
+			ochustring += "<th class='ochu_cot' id='cot_" + (i + 1) + "'>"
+		}
+		ochustring += "</tr>";
+		for(var j = 0; j <= 2; j++){
+			ochustring += "<tr>";
+			for(var i = 1; i <= 16; i++){
+				ochustring += "<th class='ochu_nho' id='nho_" + (i + (15 * j + j)) + "'>"
+			}
+			ochustring += "</tr>";
+		}
+		$('.o_chu').html(ochustring);
+		$('.ochu_cot').css({'background-image': 'url(' + 'ochuluc.png' + ')', "background-size":"cover", "width":"63px", "height":"88px", "border":" 2px solid #000000", "color":"#081F2C", "font-size":"80px", "font-family":"Myriad Pro"});
+		$('.ochu_nho').css({'background-image': 'url(' + 'ochuluc.png' + ')', "background-size":"cover", "width":"63px", "height":"88px", "border":" 2px solid #000000", "color":"#081F2C", "font-size":"80px", "font-family":"Myriad Pro"});
+	</script>
+	<script>
+		var index_dr;
+		var canh = 1;
+		var at;
+		var at2;
+		var at3;
+		var at4;
+		var at5;
+		
+		var khong_dau = [];
+		var co_dau = [];
+		var trang_thai = [];
+	</script>
+</body>

@@ -1,0 +1,164 @@
+<html>
+<head>
+    <title>Chiếc nón kì diệu BĐK</title>
+	
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>	
+	<script type="text/javascript" src="xml_loader.js"></script>
+	<script type="module" src="firebase.js"></script>
+	<script type="module" src="controller_fb.js"></script>	
+	
+    <link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="site_controller.css">
+	
+    <meta charset="utf-8" />
+</head>
+<body>
+	<button class='quaynon'>Quay nón</button>
+	<button class='canhnon'>Chuyển cảnh chiếc nón</button>
+	<button class='canhochu'>Chuyển cảnh ô chữ</button>
+	<table class='o_chu'></table>
+	<button class='lam_luc'>L</button>
+	<button class='vong1'>1</button>
+	<button class='vong2'>2</button>
+	<button class='vong3'>3</button>
+	<button class='vongdb'>Đ</button>
+	<button class='chuyennon'>C</button>
+	<button class='obimat'>?</button>
+	<button class='doidiem'>/</button>
+	<div class='mo_o_chu_khung'>
+		<button class='mo_o_chu' id='moc_1'>1</button>
+		<button class='mo_o_chu' id='moc_2'>2</button>
+		<button class='mo_o_chu' id='moc_3'>3</button>
+		<button class='mo_o_chu' id='moc_4'>4</button>
+		<button class='mo_o_chu' id='moc_5'>5</button>
+		<button class='mo_o_chu' id='moc_6'>6</button>
+		<button class='mo_o_chu' id='moc_7'>7</button>
+		<button class='mo_o_chu' id='moc_8'>8</button>
+		<button class='mo_o_chu' id='moc_9'>9</button>
+		<button class='mo_o_chu' id='moc_10'>10</button>
+		<button class='mo_o_chu' id='moc_11'>11</button>
+		<button class='mo_o_chu' id='moc_12'>12</button>
+		<button class='mo_o_chu' id='moc_13'>13</button>
+		<button class='mo_o_chu' id='moc_14'>14</button>
+		<button class='mo_o_chu' id='moc_15'>15</button>
+		<button class='mo_o_chu' id='moc_16'>16</button>
+		<button class='mo_o_chu' id='moc_17'>17</button>
+		<button class='mo_o_chu' id='moc_18'>18</button>
+		<button class='mo_o_chu' id='moc_19'>19</button>
+		<button class='mo_o_chu' id='moc_20'>20</button>
+		<button class='mo_o_chu' id='moc_21'>21</button>
+		<button class='mo_o_chu' id='moc_22'>22</button>
+		<button class='mo_o_chu' id='moc_23'>23</button>
+		<button class='mo_o_chu' id='moc_24'>24</button>
+		<button class='mo_o_chu' id='moc_25'>25</button>
+		<button class='mo_o_chu' id='moc_26'>26</button>
+		<button class='mo_o_chu' id='moc_27'>27</button>
+		<button class='mo_o_chu' id='moc_28'>28</button>
+		<button class='mo_o_chu' id='moc_29'>29</button>
+		<button class='mo_o_chu' id='moc_30'>30</button>
+		<button class='mo_o_chu' id='moc_31'>31</button>
+		<button class='mo_o_chu' id='moc_32'>32</button>
+		<button class='mo_o_chu' id='moc_33'>33</button>
+		<button class='mo_o_chu' id='moc_34'>34</button>
+		<button class='mo_o_chu' id='moc_35'>35</button>
+		<button class='mo_o_chu' id='moc_36'>36</button>
+		<button class='mo_o_chu' id='moc_37'>37</button>
+		<button class='mo_o_chu' id='moc_38'>38</button>
+		<button class='mo_o_chu' id='moc_39'>39</button>
+		<button class='mo_o_chu' id='moc_40'>40</button>
+		<button class='mo_o_chu' id='moc_41'>41</button>
+		<button class='mo_o_chu' id='moc_42'>42</button>
+		<button class='mo_o_chu' id='moc_43'>43</button>
+		<button class='mo_o_chu' id='moc_44'>44</button>
+		<button class='mo_o_chu' id='moc_45'>45</button>
+		<button class='mo_o_chu' id='moc_46'>46</button>
+		<button class='mo_o_chu' id='moc_47'>47</button>
+		<button class='mo_o_chu' id='moc_48'>48</button>
+	</div>
+	<button class='load_doannhanh1'>Load câu hỏi Đoán nhanh 1</button>
+	<button class='load_doannhanh2'>Load câu hỏi Đoán nhanh 2</button>
+	<button class='load_vong1'>Load câu hỏi Vòng 1</button>
+	<button class='load_vong2'>Load câu hỏi Vòng 2</button>
+	<button class='load_vong3'>Load câu hỏi Vòng 3</button>
+	<button class='load_khangia'>Load câu hỏi Khán giả</button>
+	<button class='load_vongdb'>Load câu hỏi Vòng Đặc biệt</button>
+	<button class='hienochu'>Hiện ô chữ</button>
+	<button class='doandungochu'>Đoán đúng ô chữ</button>
+	<div class='diem_thisinh_khung'>
+		<div class='diemthisinh' id='dts1'>
+			<p class='sttthisinh'>Thí sinh 1</p>
+			<textarea class='sodiemts' id='sdt1'>0</textarea>
+			<textarea class='sodiemts_total' id='sdtt1' disabled>0</textarea>
+		</div>
+		<div class='diemthisinh' id='dts2' style='top:55px;'>
+			<p class='sttthisinh'>Thí sinh 2</p>
+			<textarea class='sodiemts' id='sdt2'>0</textarea>
+			<textarea class='sodiemts_total' id='sdtt2' disabled>0</textarea>
+		</div>
+		<div class='diemthisinh' id='dts3' style='top:110px;'>
+			<p class='sttthisinh'>Thí sinh 3</p>
+			<textarea class='sodiemts' id='sdt3'>0</textarea>
+			<textarea class='sodiemts_total' id='sdtt3' disabled>0</textarea>
+		</div>
+		<button class='cong_vao_total'>Them vao tong diem</button>
+	</div>
+	<button class='nhac' id='intro'>Intro</button>
+	<button class='nhac' id='he'>DCT vao san khau</button>
+	<button class='nhac' id='ncd'>Nhac chu de</button>
+	<button class='nhac' id='tt'>Tien thuong</button>
+	<button class='nhac' id='hoc' disabled>HOC</button>
+	<button class='nhac' id='ccx' disabled>CCX</button>
+	<button class='nhac' id='mcc' disabled>MCC</button>
+	<button class='nhac' id='sai'>X</button>
+	<button class='nhac' id='s30'>30</button>
+	<button class='nhac' id='s10'>10</button>
+	<button class='nhac' id='nn1'>NN1</button>
+	<button class='nhac' id='nn2'>NN2</button>
+	<button class='nhac' id='nn3'>NN3</button>
+	<button class='nhac' id='bc'>Bam chuong</button>
+	<button class='nhac' id='md'>Mat diem</button>
+	<button class='nhac' id='ml'>Mat luot</button>
+	<button class='nhac' id='cd'>Chia doi</button>
+	<button class='nhac' id='tl'>Them luot</button>
+	<button class='nhac' id='mm'>May man</button>
+	<button class='nhac' id='nd'>Nhan doi</button>
+	<p class='cauhoi'>Cau hoi</p>
+	<script>
+		var ochustring = "";
+		ochustring += "<tr>";
+		for(var i = 0; i <= 15; i++){
+			ochustring += "<th class='ochu_cot' id='cot_" + (i + 1) + "'>"
+		}
+		ochustring += "</tr>";
+		for(var j = 0; j <= 2; j++){
+			ochustring += "<tr>";
+			for(var i = 1; i <= 16; i++){
+				ochustring += "<th class='ochu_nho' id='nho_" + (i + (15 * j + j)) + "'>"
+			}
+			ochustring += "</tr>";
+		}
+		$('.o_chu').html(ochustring);
+		$('.ochu_cot').css({'background-image': 'url(' + 'ochuluc.png' + ')', "background-size":"cover", "width":"63px", "height":"88px", "border":" 2px solid #000000", "color":"#081F2C", "font-size":"60px", "font-family":"Myriad Pro"});
+		$('.ochu_nho').css({'background-image': 'url(' + 'ochuluc.png' + ')', "background-size":"cover", "width":"63px", "height":"88px", "border":" 2px solid #000000", "color":"#081F2C", "font-size":"60px", "font-family":"Myriad Pro"});
+	</script>
+	<script>
+		var dr = 0;
+		var du = 12;
+		var f;
+		
+		var lam_c = 1;
+		var vong_tieu_de = 0;
+		var chuoi_cau_hoi = [];
+		var cau_hoi = [];
+		
+		var non_c = 1;
+		var obimat_c = 1;
+		var doidiem_c = 1;
+		
+		var obimat_num = 1;
+		
+		var diem_1_total = 0;
+		var diem_2_total = 0;
+		var diem_3_total = 0;
+	</script>
+</body>
